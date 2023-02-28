@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private bool isGrounded = false;
     [SerializeField] private bool doubleJump = true;
+    [SerializeField] private bool WallJump = false;
     [SerializeField] private bool dash = true;
     [SerializeField] private bool isInDream = false;
     // Start is called before the first frame update
@@ -100,7 +101,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground" && rb.velocity.y <= 0.5 && isGrounded == false)
+        if ((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Wall" ) && rb.velocity.y <= 0.5 && isGrounded == false && !WallJump)
         {
             isGrounded = true;
             doubleJump = true;
@@ -123,6 +124,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isGrounded = false;
+        }
+        if (collision.gameObject.tag == "Wall")
+        {
+            WallJump = true;
         }
     }
 
