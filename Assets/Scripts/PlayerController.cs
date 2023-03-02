@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashingTime = 0.5f;
     [SerializeField] private float dashingCooldown = 1f;
 
-    [SerializeField] private bool isGrounded = false;
-    [SerializeField] private bool doubleJump = true;
+    public bool isGrounded = true;
+    public bool doubleJump = true;
     [SerializeField] private bool WallJump = false;
     [SerializeField] private bool dash = true;
     [SerializeField] private bool isInDream = false;
@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         // Horizontal movement
         float x = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(x * speed, rb.velocity.y);
+
         // Running animation
         if (x > 0)
         {
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
                 anim.Play("Run");
             }
         }
-        if (rb.velocity.x <= 0 && x == 0 && isGrounded == true)
+        if (rb.velocity.x <= 0 && isGrounded == true)
         {
             anim.SetBool("isWalking", false);
             anim.Play("Idle");
@@ -70,7 +71,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
             anim.Play("Jump");
         }
-        if (!isGrounded && rb.velocity.y < 0) {
+        if (!isGrounded && rb.velocity.y < -5) {
             anim.SetBool("isJumping", false);
             anim.SetBool("isFalling", true);
             anim.Play("Fall");
