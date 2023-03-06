@@ -74,4 +74,7 @@ crashlytics-build.properties
 
 #Assets FTTGR
 /[Aa]ssets/[Aa]sset FTTGR/*
+ 
+ #TextMesh Pro
+/[Aa]ssets/[Tt]ext[Mm]esh[Pp]ro/*
 
