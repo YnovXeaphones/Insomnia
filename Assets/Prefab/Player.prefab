@@ -124,7 +124,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 610d4501a999abfe89237a9ea130c28e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -173,13 +173,14 @@ MonoBehaviour:
   anim: {fileID: 0}
   tr: {fileID: 0}
   TR: {fileID: 0}
-  speed: 6
-  jumpForce: 6
+  speed: 9
+  jumpForce: 9
   dashingPower: 30
   dashingTime: 0.2
   dashingCooldown: 1
   isGrounded: 0
   doubleJump: 1
+  WallJump: 0
   dash: 1
   isInDream: 0
 --- !u!96 &7422517058584376029
