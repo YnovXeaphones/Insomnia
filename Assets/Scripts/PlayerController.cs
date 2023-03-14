@@ -2,23 +2,27 @@ using System.Collections;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private SpriteRenderer sr;
-    [SerializeField] private Animator anim;
-    [SerializeField] private Transform tr;
-    [SerializeField] private TrailRenderer TR;
-
+    private Rigidbody2D rb;
+    private SpriteRenderer sr;
+    private Animator anim;
+    private Transform tr;
+    private TrailRenderer TR;
+    [Header("Movement")]
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 5f;
+    [Header("Dash")]
     [SerializeField] private float dashingPower = 5f;
     [SerializeField] private float dashingTime = 0.5f;
     [SerializeField] private float dashingCooldown = 1f;
 
+    [Header("Checker")]
     public bool isGrounded = true;
     public bool doubleJump = true;
     [SerializeField] private bool WallJump = false;
     [SerializeField] private bool dash = true;
     [SerializeField] private bool isInDream = false;
+    [Header("Respawn")]
+    public Vector3 respawnPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,48 +37,8 @@ public class PlayerController : MonoBehaviour
     {
         // Horizontal movement
         float x = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(x * speed, rb.velocity.y);
-
-        // Running animation
-        if (x > 0)
-        {
-            sr.flipX = false;
-            if (isGrounded == true) {
-                anim.SetBool("isWalking", true);
-                anim.Play("Run");
-            }
-        }
-        else if (x < 0)
-        {
-            sr.flipX = true;
-            if (isGrounded == true) {
-                anim.SetBool("isWalking", true);
-                anim.Play("Run");
-            }
-        }
-        if (rb.velocity.x <= 0 && isGrounded == true)
-        {
-            anim.SetBool("isWalking", false);
-            anim.Play("Idle");
-        }
-        // Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || doubleJump))
-        {
-            if (!isGrounded && doubleJump)
-            {
-                doubleJump = false;
-            }
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            isGrounded = false;
-            anim.SetBool("isJumping", true);
-            anim.SetBool("isWalking", false);
-            anim.Play("Jump");
-        }
-        if (!isGrounded && rb.velocity.y < -5) {
-            anim.SetBool("isJumping", false);
-            anim.SetBool("isFalling", true);
-            anim.Play("Fall");
-        }
+        Movement(x);
+        Jump();
         
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -94,10 +58,6 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
-    }
-
-    private void FixedUpdate() {
-        
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -131,6 +91,55 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void Movement(float x)
+    {
+        rb.velocity = new Vector2(x * speed, rb.velocity.y);
+
+        // Running animation
+        if (x > 0)
+        {
+            sr.flipX = false;
+            if (isGrounded == true) {
+                anim.SetBool("isWalking", true);
+                anim.Play("Run");
+            }
+        }
+        else if (x < 0)
+        {
+            sr.flipX = true;
+            if (isGrounded == true) {
+                anim.SetBool("isWalking", true);
+                anim.Play("Run");
+            }
+        }
+        if (rb.velocity.x <= 0 && isGrounded == true)
+        {
+            anim.SetBool("isWalking", false);
+            anim.Play("Idle");
+        }
+    }
+
+    private void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || doubleJump))
+        {
+            if (!isGrounded && doubleJump)
+            {
+                doubleJump = false;
+            }
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            isGrounded = false;
+            anim.SetBool("isJumping", true);
+            anim.SetBool("isWalking", false);
+            anim.Play("Jump");
+        }
+        if (!isGrounded && rb.velocity.y < -5) {
+            anim.SetBool("isJumping", false);
+            anim.SetBool("isFalling", true);
+            anim.Play("Fall");
+        }
+    }
+
     private IEnumerator Dash()
     {
         float x = Input.GetAxisRaw("Horizontal");
@@ -151,5 +160,15 @@ public class PlayerController : MonoBehaviour
     public void Death()
     {
         Destroy(gameObject);
+    }
+
+    public void Respawn()
+    {
+        tr.position = respawnPoint;
+    }
+
+    public void SetRespawnPoint()
+    {
+        respawnPoint = tr.position;
     }
 }
