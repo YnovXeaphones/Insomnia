@@ -133,11 +133,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (26)
@@ -1464,11 +1460,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (12)
@@ -1534,11 +1526,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (1)
@@ -1756,11 +1744,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (21)
@@ -1910,11 +1894,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (19)
@@ -1980,11 +1960,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (15)
@@ -2267,11 +2243,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (25)
@@ -2337,11 +2309,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (8)
@@ -2609,11 +2577,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (13)
@@ -3318,11 +3282,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (6)
@@ -3794,11 +3754,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (4)
@@ -4099,11 +4055,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (24)
@@ -4253,11 +4205,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (14)
@@ -4474,11 +4422,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (20)
@@ -4544,11 +4488,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (27)
@@ -4614,11 +4554,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (5)
@@ -42126,11 +42062,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (22)
@@ -42196,11 +42128,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (16)
@@ -42350,11 +42278,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (11)
@@ -42556,11 +42480,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (23)
@@ -42737,11 +42657,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (7)
@@ -42975,11 +42891,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (2)
@@ -43232,11 +43144,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (10)
@@ -43467,11 +43375,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (18)
@@ -43537,11 +43441,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (9)
@@ -43646,11 +43546,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike
@@ -43879,11 +43775,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (29)
@@ -44107,6 +43999,17 @@ Transform:
   m_Father: {fileID: 475447994}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2085181092 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 402107308406293930, guid: 67b0b539b23b22507a2463683dab375b, type: 3}
+  m_PrefabInstance: {fileID: 585356263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6846e22cb2f90211a3df88e69dc6559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2097340210
 GameObject:
   m_ObjectHideFlags: 0
@@ -44166,11 +44069,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (3)
@@ -44236,11 +44135,7 @@ PrefabInstance:
     - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332705520825891309, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
-      propertyPath: _onPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Respawn
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2085181092}
     - target: {fileID: 4332705520825891310, guid: 25286ee76127b527fbc1d0dc32681380, type: 3}
       propertyPath: m_Name
       value: Spike (17)
