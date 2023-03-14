@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: e15c9c1d6f661c28ea04bb365128a624
+guid: 939fbf7a808e3717ba3c908c34d62b5e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -700802387755607878
-    second: Snow1
-  - first:
-      213: -6653427178143589517
-    second: Snow2
-  - first:
-      213: -8609862783061455279
-    second: Snow3
-  - first:
-      213: 8235637959329656600
-    second: Snow4
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -75,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -94,31 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -153,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Snow1
+      name: Sand_0
       rect:
         serializedVersion: 2
         x: 8
@@ -167,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab8d41cf0ff3646f0800000000000000
-      internalID: -700802387755607878
+      spriteID: 4504794f95535be75a0b3b95b0cf4383
+      internalID: -1324477017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow2
+      name: Sand_1
       rect:
         serializedVersion: 2
         x: 24
@@ -188,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b52db9b374aa3a0800000000000000
-      internalID: -6653427178143589517
+      spriteID: 5a91e7d39bdcece68a9cb562e90ee1ac
+      internalID: -1276082674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow3
+      name: Sand_2
       rect:
         serializedVersion: 2
         x: 8
@@ -209,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15e04c27a6f938880800000000000000
-      internalID: -8609862783061455279
+      spriteID: 94b7067091ddbdf13834737ebe5501ad
+      internalID: 1907428312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snow4
+      name: Sand_3
       rect:
         serializedVersion: 2
         x: 24
@@ -230,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81f2198f61dda4270800000000000000
-      internalID: 8235637959329656600
+      spriteID: 3d7ceaeda0afc5f19b98a224a933dca1
+      internalID: 1945073466
       vertices: []
       indices: 
       edges: []
@@ -247,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Snow3: -8609862783061455279
-      Snow2: -6653427178143589517
-      Snow1: -700802387755607878
-      Snow4: 8235637959329656600
+      Sand_0: -1324477017
+      Sand_1: -1276082674
+      Sand_3: 1945073466
+      Sand_2: 1907428312
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
