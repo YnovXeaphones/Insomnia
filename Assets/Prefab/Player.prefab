@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2174791709964443976}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.71, y: -0.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -168,21 +168,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6846e22cb2f90211a3df88e69dc6559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  sr: {fileID: 0}
-  anim: {fileID: 0}
-  tr: {fileID: 0}
-  TR: {fileID: 0}
   speed: 9
   jumpForce: 9
+  CoyoteTime: 0.5
   dashingPower: 30
   dashingTime: 0.2
   dashingCooldown: 1
   isGrounded: 0
   doubleJump: 1
+  falling: 0
   WallJump: 0
   dash: 1
   isInDream: 0
+  respawnPoint: {x: 0, y: 0, z: 0}
 --- !u!96 &2174791709964443977
 TrailRenderer:
   serializedVersion: 2

@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 5f;
+    private float CoyoteTimeOG;
+    [SerializeField] private float CoyoteTime = 0.2f;
     [Header("Dash")]
     [SerializeField] private float dashingPower = 5f;
     [SerializeField] private float dashingTime = 0.5f;
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [Header("Checker")]
     public bool isGrounded = true;
     public bool doubleJump = true;
+    [SerializeField] private bool falling = false;
     [SerializeField] private bool WallJump = false;
     [SerializeField] private bool dash = true;
     [SerializeField] private bool isInDream = false;
@@ -31,6 +34,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         tr = GetComponent<Transform>();
         TR = GetComponent<TrailRenderer>();
+        CoyoteTimeOG = CoyoteTime;
     }
     // Update is called once per frame
     void Update()
@@ -39,6 +43,7 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         Movement(x);
         Jump();
+        CheckGrounded();
         
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -65,6 +70,8 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             doubleJump = true;
+            falling = false;
+            CoyoteTime = CoyoteTimeOG;
             anim.SetBool("isJumping", false);
             anim.SetBool("isFalling", false);
             if (rb.velocity.x > 0 || rb.velocity.x < 0)
@@ -81,13 +88,9 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if ((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Wall") && rb.velocity.y <= 0.5)
         {
-            isGrounded = false;
-        }
-        if (collision.gameObject.tag == "Wall")
-        {
-            WallJump = true;
+            falling = true;
         }
     }
 
@@ -112,7 +115,7 @@ public class PlayerController : MonoBehaviour
                 anim.Play("Run");
             }
         }
-        if (rb.velocity.x <= 0 && isGrounded == true)
+        if (rb.velocity.x == 0 && isGrounded == true)
         {
             anim.SetBool("isWalking", false);
             anim.Play("Idle");
@@ -137,6 +140,19 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isJumping", false);
             anim.SetBool("isFalling", true);
             anim.Play("Fall");
+        }
+    }
+
+    private void CheckGrounded() 
+    {
+        if (CoyoteTime > 0 && falling == true)
+        {
+                CoyoteTime -= Time.deltaTime;
+        }
+        else if (CoyoteTime <= 0 && falling == true)
+        {
+                isGrounded = false;
+                falling = false;
         }
     }
 
