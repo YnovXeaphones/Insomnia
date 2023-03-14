@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-     private IEnumerator Dash()
+    private IEnumerator Dash()
     {
         float x = Input.GetAxisRaw("Horizontal");
         dash = false;
@@ -146,5 +146,10 @@ public class PlayerController : MonoBehaviour
         // isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         dash = true;
+    }
+
+    public void Death()
+    {
+        Destroy(gameObject);
     }
 }
