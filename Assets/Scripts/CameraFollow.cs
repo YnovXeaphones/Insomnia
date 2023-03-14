@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Vector3 downLimit;
     [SerializeField] private float smoothSpeed = 0.125f;
     [SerializeField] private bool isInDream = false;
+    public bool isActive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && isActive == true)
         {
             if (isInDream == false)
             {
@@ -40,7 +41,7 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        if (player.transform.position.y > downLimit.y && Input.GetKey(KeyCode.R) == false)
+        if (player.transform.position.y > downLimit.y && Input.GetKey(KeyCode.R) == false && isActive == true)
         {
             Vector3 desiredPosition = player.transform.position + offset;
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
