@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - Wall
   layers:
   - Default
   - TransparentFX
@@ -56,5 +55,12 @@ TagManager:
     uniqueID: 2788087291
     locked: 0
   - name: UI
+<<<<<<< HEAD
     uniqueID: 2132624863
+=======
+    uniqueID: 578889823
+    locked: 0
+  - name: Text
+    uniqueID: 2873429383
+>>>>>>> Menu+
     locked: 0
