@@ -9,7 +9,7 @@
 
 Notre repository:
 
-* <>
+* <https://github.com/Xeaphones/Insomnia>
 
 ## Sommaire:
 
