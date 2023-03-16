@@ -19,6 +19,9 @@ public class VolumeScript : MonoBehaviour
         {
             Load();
         }
+
+        
+        
     }
 
     public void ChangeVolume(float volume)
