@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private Transform tr;
     private TrailRenderer TR;
+    private AudioSource AS;
     [Header("Movement")]
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 5f;
@@ -36,6 +37,15 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         tr = GetComponent<Transform>();
         TR = GetComponent<TrailRenderer>();
+        AS = GetComponent<AudioSource>();
+        if (PlayerPrefs.HasKey("musicVolume"))
+        {
+            AS.volume = PlayerPrefs.GetFloat("musicVolume");
+        }
+        else
+        {
+            AS.volume = 1;
+        }
         CoyoteTimeOG = CoyoteTime;
     }
     // Update is called once per frame
@@ -68,7 +78,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if ((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Wall" ) && rb.velocity.y <= 0.5 && isGrounded == false && !WallJumped)
+        if ((collision.gameObject.tag == "Ground") && rb.velocity.y == 0 && isGrounded == false && !WallJumped)
         {
             isGrounded = true;
             doubleJump = true;
@@ -87,11 +97,13 @@ public class PlayerController : MonoBehaviour
                 anim.Play("Idle");
             }
         }
-        if (collision.gameObject.tag == "Wall" && rb.velocity.y <= 0.5)
+        if (collision.gameObject.tag == "Wall" && rb.velocity.y < 0 && !WallJumped)
         {
             WallJump = true;
+            isGrounded = true;
+            doubleJump = true;
         }
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" && rb.velocity.y == 0)
         {
             WallJump = false;
             WallJumped = false;
@@ -195,6 +207,8 @@ public class PlayerController : MonoBehaviour
 
     public void Respawn()
     {
+        isInDream = false;
+        AS.PlayOneShot(AS.clip);
         tr.position = respawnPoint;
     }
 

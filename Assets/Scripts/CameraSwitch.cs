@@ -5,10 +5,12 @@ using UnityEngine;
 public class CameraSwitch : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool isIn = false;
+    [SerializeField] private bool isIn = false;
     private GameObject Camera;
     [SerializeField] private Vector3 Position;
     [SerializeField] private float Size;
+    [SerializeField] private bool isInDream = false;
+    [SerializeField] private float dimensionJump = -100;
     void Start()
     {
         Camera = GameObject.Find("Main Camera");
@@ -17,7 +19,12 @@ public class CameraSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isIn && Camera.transform.position != Position)
+        {
+            Camera.transform.position = Vector3.Lerp(Camera.transform.position, Position, 1);
+            Camera.GetComponent<Camera>().orthographicSize = Size;
+            Camera.GetComponent<CameraFollow>().isActive = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

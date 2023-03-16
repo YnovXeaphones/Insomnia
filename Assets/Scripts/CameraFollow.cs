@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private Vector3 offset = new Vector3(0,0 ,-10);
     [SerializeField] private Vector3 downLimit;
+    private Vector3 downLimitOG;
     [SerializeField] private float smoothSpeed = 0.125f;
     [SerializeField] private bool isInDream = false;
     public bool isActive = true;
@@ -17,6 +18,7 @@ public class CameraFollow : MonoBehaviour
     {
         player = GameObject.Find("Player");
         dimensionJump = player.GetComponent<PlayerController>().dimensionJump;
+        downLimitOG = downLimit;
     }
 
     // Update is called once per frame
@@ -54,5 +56,13 @@ public class CameraFollow : MonoBehaviour
             Vector3 desiredPosition = player.transform.position + offset;
             transform.position = desiredPosition;
         }
+    }
+
+    public void ResetCamera()
+    {
+        Vector3 desiredPosition = player.transform.position + offset;
+        transform.position = desiredPosition;
+        downLimit.y = downLimitOG.y;
+        isInDream = false;
     }
 }
