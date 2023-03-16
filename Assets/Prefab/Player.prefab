@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6846e22cb2f90211a3df88e69dc6559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TR: {fileID: 2174791709964443977}
   speed: 9
   jumpForce: 9
   CoyoteTime: 0.5
@@ -178,6 +179,7 @@ MonoBehaviour:
   doubleJump: 1
   falling: 0
   WallJump: 0
+  WallJumped: 0
   dash: 1
   isInDream: 0
   respawnPoint: {x: 0, y: 0, z: 0}

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 5f;
+    public float dimensionJump = -100f;
     private float CoyoteTimeOG;
     [SerializeField] private float CoyoteTime = 0.2f;
     [Header("Dash")]
@@ -51,12 +52,12 @@ public class PlayerController : MonoBehaviour
             if (isInDream == false)
             {
                 isInDream = true;
-                tr.position = new Vector3(tr.position.x, tr.position.y +(-11), tr.position.z);
+                tr.position = new Vector3(tr.position.x, tr.position.y +(dimensionJump), tr.position.z);
             }
             else
             {
                 isInDream = false;
-                tr.position = new Vector3(tr.position.x, tr.position.y - (-12), tr.position.z);
+                tr.position = new Vector3(tr.position.x, tr.position.y - (dimensionJump), tr.position.z);
             }
         }
 

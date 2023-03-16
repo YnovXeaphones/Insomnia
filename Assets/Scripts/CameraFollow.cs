@@ -10,11 +10,13 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float smoothSpeed = 0.125f;
     [SerializeField] private bool isInDream = false;
     public bool isActive = true;
+    [SerializeField] private float dimensionJump;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        dimensionJump = player.GetComponent<PlayerController>().dimensionJump;
     }
 
     // Update is called once per frame
@@ -27,14 +29,14 @@ public class CameraFollow : MonoBehaviour
                 isInDream = true;
                 Vector3 desiredPosition = player.transform.position + offset;
                 transform.position = desiredPosition;
-                downLimit.y += -12;
+                downLimit.y += dimensionJump;
             }
             else
             {
                 isInDream = false;
                 Vector3 desiredPosition = player.transform.position + offset;
                 transform.position = desiredPosition;
-                downLimit.y -= -12;
+                downLimit.y -= dimensionJump;
             }
         }
     }
@@ -46,6 +48,11 @@ public class CameraFollow : MonoBehaviour
             Vector3 desiredPosition = player.transform.position + offset;
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
             transform.position = smoothedPosition;
+        }
+        if (Input.GetKeyDown(KeyCode.R) && isActive == true)
+        {
+            Vector3 desiredPosition = player.transform.position + offset;
+            transform.position = desiredPosition;
         }
     }
 }
