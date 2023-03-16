@@ -5229,7 +5229,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1996080428}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &188046605
 SpriteRenderer:
@@ -100498,7 +100498,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1996080428}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1702583544
 SpriteRenderer:
@@ -101710,14 +101710,6 @@ PrefabInstance:
     - target: {fileID: 1437656323100317204, guid: 05ca048474079af598ae7024cca680b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1437656323100317205, guid: 05ca048474079af598ae7024cca680b5, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1437656323100317205, guid: 05ca048474079af598ae7024cca680b5, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1834224779
       objectReference: {fileID: 0}
     - target: {fileID: 1437656323100317207, guid: 05ca048474079af598ae7024cca680b5, type: 3}
       propertyPath: m_Name
@@ -103962,9 +103954,9 @@ Transform:
   - {fileID: 1231327363}
   - {fileID: 1746421136}
   - {fileID: 1823048604}
-  - {fileID: 1821398066}
   - {fileID: 1702583543}
   - {fileID: 188046604}
+  - {fileID: 1821398066}
   - {fileID: 276989696}
   - {fileID: 1125730395}
   - {fileID: 1700886588}
@@ -105596,6 +105588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1768966830}
     m_Modifications:
+    - target: {fileID: 1821398067, guid: 05ca048474079af598ae7024cca680b5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1437656323100317194, guid: 05ca048474079af598ae7024cca680b5, type: 3}
       propertyPath: _addPretzelScore.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
