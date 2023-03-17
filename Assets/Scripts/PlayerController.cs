@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
             AS.volume = 1;
         }
         CoyoteTimeOG = CoyoteTime;
+        respawnPoint = new Vector3(PlayerPrefs.GetFloat("respawn.x"), PlayerPrefs.GetFloat("respawn.y"), PlayerPrefs.GetFloat("respawn.z"));
+        tr.position = respawnPoint;
     }
     // Update is called once per frame
     void Update()
@@ -215,5 +217,8 @@ public class PlayerController : MonoBehaviour
     public void SetRespawnPoint()
     {
         respawnPoint = tr.position;
+        PlayerPrefs.SetFloat("respawn.x",respawnPoint.x);
+        PlayerPrefs.SetFloat("respawn.y",respawnPoint.y);
+        PlayerPrefs.SetFloat("respawn.z",respawnPoint.z);
     }
 }
